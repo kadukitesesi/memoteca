@@ -14,9 +14,14 @@ export class SectionFormComponent implements OnInit {
     modelo:''
   }
 
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  criarPensamento() {
+    alert("modelo1")
   }
 
 }
