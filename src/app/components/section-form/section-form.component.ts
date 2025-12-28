@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionFormComponent implements OnInit {
 
+  pensamento = {
+    id: '1',
+    conteudo:'Aprendendo js',
+    autoria:'Dev',
+    modelo:''
+  }
+
   constructor() { }
 
   ngOnInit(): void {
