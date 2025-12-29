@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SectionFormComponent } from './components/section-form/section-form.component';
 import { FormsModule } from '@angular/forms';
 import { SectionBulletinComponent } from './components/section-bulletin/section-bulletin.component';
+import { PensamentoComponent } from './components/pensamentos/pensamento/pensamento.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SectionBulletinComponent } from './components/section-bulletin/section-
     HeaderComponent,
     FooterComponent,
     SectionFormComponent,
-    SectionBulletinComponent
+    SectionBulletinComponent,
+    PensamentoComponent
   ],
   imports: [
     BrowserModule,
