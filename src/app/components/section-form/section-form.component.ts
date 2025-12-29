@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pensamento } from '../pensamentos/pensamento/pensamento';
 
 @Component({
   selector: 'app-section-form',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionFormComponent implements OnInit {
 
-  pensamento = {
-    id: '1',
+  pensamento: Pensamento = {
+    id: 1,
     conteudo:'Aprendendo js',
     autoria:'Dev',
     modelo:''
