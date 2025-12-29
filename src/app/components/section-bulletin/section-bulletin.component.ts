@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamentos/pensamento/pensamento';
+import { PensamentoService } from '../pensamentos/pensamento.service';
 
 @Component({
   selector: 'app-section-bulletin',
@@ -10,9 +11,12 @@ export class SectionBulletinComponent implements OnInit {
 
   listaPensamentos: Pensamento[] = [];
 
-  constructor() { }
+  constructor(private service: PensamentoService) { }
 
   ngOnInit(): void {
+    this.service.getAll().subscribe((listaPensamentos) => {
+      this.listaPensamentos = listaPensamentos
+    })
   }
 
 }

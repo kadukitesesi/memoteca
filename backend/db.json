@@ -1,28 +1,16 @@
 {
   "pensamentos": [
     {
-      "id": 1,
-      "conteudo":"que bomque você veio",
-      "autoria": "Carlos",
-      "modelo": "modelo2"
-    },
-    {
-      "id": 2,
-      "conteudo":"que bomque você veio",
-      "autoria": "Carlos",
-      "modelo": "modelo1"
-    },
-    {
-      "id": 3,
-      "conteudo":"que bomque você veio",
-      "autoria": "Carlos",
-      "modelo": "modelo2"
-    },
-    {
       "id": 4,
-      "conteudo":"Angular é mt bom",
+      "conteudo": "Angular é mt bom",
       "autoria": "Carlos",
       "modelo": "modelo3"
+    },
+    {
+      "conteudo": "testando put",
+      "autoria": "Eu mesmo",
+      "modelo": "modelo2",
+      "id": 5
     }
   ]
 }

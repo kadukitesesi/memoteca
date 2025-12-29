@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamentos/pensamento/pensamento';
+import { PensamentoService } from '../pensamentos/pensamento.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-section-form',
@@ -9,20 +11,26 @@ import { Pensamento } from '../pensamentos/pensamento/pensamento';
 export class SectionFormComponent implements OnInit {
 
   pensamento: Pensamento = {
-    id: 1,
-    conteudo:'Aprendendo js',
-    autoria:'Dev',
+    conteudo:'',
+    autoria:'',
     modelo:''
   }
 
 
-  constructor() { }
+  constructor(private service: PensamentoService,
+              private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
   criarPensamento() {
-    alert("modelo1")
+    this.service.create(this.pensamento).subscribe()
+    this.router.navigate(['/section-bulletin'])
+  }
+
+  cancelar() {
+    this.router.navigate(['/section-bulletin'])
   }
 
 }
